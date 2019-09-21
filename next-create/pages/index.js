@@ -80,6 +80,10 @@ const Home = () => {
         <h4>hash路由</h4>
         <Link href="#james"><a>选james</a></Link>
       </div>
+      <div>
+        <h4>懒加载模块(moment)</h4>
+        <Link href="/time"><a>时间模块</a></Link>
+      </div>
     </>
   )
 }

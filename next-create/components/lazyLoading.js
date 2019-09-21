@@ -1,0 +1,1 @@
+export default ({text}) => (<div>Lazy Loading Component: {text}</div>)

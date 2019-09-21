@@ -13,9 +13,9 @@ const Xiaojiejie = ({router, list}) => {
 }
 Xiaojiejie.getInitialProps = async () => {
     const data = await new Promise((resolve, reject) => {
-        axios('https://api.github.com/repos/shenghy/my-blog/issues/43/comments?page=1&per_page=10&timestamp=1569063669814').then(res => {
+        axios('https://www.easy-mock.com/mock/5cfcce489dc7c36bd6da2c99/xiaojiejie/getList').then(res => {
             console.log('远程数据：%o', res.data);
-            resolve(res.data);
+            resolve(res.data.data);
         }).catch(reject);
     });
     return data;
